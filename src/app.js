@@ -1,7 +1,7 @@
-const express = require(`express`)
-const cors = require(`cors`)
+const express = require(`express`);
+const cors = require(`cors`);
 const bodyParser = require(`body-parser`);
-const user = require(`./controller/user.controller`)
+const user = require(`./controller/user.controller`);
 
 const app = express();
 
@@ -12,4 +12,4 @@ app.use(`/user`, user);
 
 app.use((error, req, res, _next) => res.send(error.message));
 
-module.exports = app
+module.exports = app;
